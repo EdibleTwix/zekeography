@@ -1,3 +1,4 @@
+/* GENERAL */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -75,6 +76,18 @@ body {
     margin-left: 25px;
 }
 
+p, h1, h2, h3, footer, label {
+    color: #F5F5F5 ;
+}
+
+.hr-style {
+    border: none;
+    height: 1px;
+    background-color: #2B2B2B;
+    margin: 20px 0;
+}
+
+/* INDEX */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -122,6 +135,18 @@ body {
     text-align: center;
 }
 
+.buy-button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* GALLERY */
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -156,7 +181,6 @@ body {
     color: #F5F5F5 ;
 }
 
-/* Modal styling */
 .modal {
     display: none;
     position: fixed;
@@ -185,7 +209,6 @@ body {
     transition: transform 0.5s ease; 
 }
 
-/* Rotate image classes */
 .rotate-90 {
     transform: rotate(90deg);
 }
@@ -202,7 +225,6 @@ body {
     transform: rotate(360deg);
 }
 
-/* Modal controls for rotation */
 .modal-controls {
     text-align: center;
     z-index: 10;
@@ -240,44 +262,13 @@ body {
     z-index: 10;
 }
 
-p, h1, h2, h3, footer, label {
-    color: #F5F5F5 ;
-}
-
-table {
-    width: calc(100%-220px);
-    text-align: center;
-    border-collapse: collapse;
-    font-family: system-ui;
-}
-tr, td {
-    color: #F5F5F5 ;
-    border: 1px solid #F5F5F5 ;
-    padding: .5ch 1ch;
-    width: 150px;
-}
-
-th {
-    background: #F5F5F5 ;
-    color: black;
-}
-
-#centertable {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.hr-style {
-    border: none;
-    height: 1px;
-    background-color: #2B2B2B;
-    margin: 20px 0;
-}
-
+/* FOOTER */
 footer {
     padding: 20px;
     margin-left: 220px;
     box-sizing: border-box;
+    display: block;
+    text-align: center;
 }
 
 .social-icons {
@@ -285,11 +276,6 @@ footer {
     display: flex;
     justify-content: center;
     gap: 20px;
-}
-
-small {
-    display: block;
-    text-align: center;
 }
 
 /* Mobile View */
