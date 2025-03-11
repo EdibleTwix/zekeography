@@ -80,6 +80,10 @@ p, h1, h2, h3, footer, label {
     color: #F5F5F5 ;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 .hr-style {
     border: none;
     height: 1px;
