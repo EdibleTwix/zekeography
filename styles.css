@@ -17,6 +17,7 @@ body {
     height: 100%;
     left: 0;
     transition: left 0.3s ease;
+    z-index: 1000;
 }
 
 .sidebar ul {
@@ -167,7 +168,7 @@ h4 {
 
 .gallery-item {
     width: 48%;
-    margin: 1%, 0;
+    margin: 1% 0;
     aspect-ratio: 1 / 1;
     display: flex;
     flex-direction: column;
@@ -306,6 +307,10 @@ footer {
 
     footer {
         margin-left: 0px;
+    }
+    
+    .gallery-item {
+        width: 46%;
     }
 }
 
