@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>commissions | zekeography</title>
     <link rel="icon" type="image/png" href="images/icona.png">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <!--CODE BY EMANUEL ADRIAN MORENO-->
 <body>
@@ -16,7 +16,7 @@
             <ul>
                 <li class="sidebarname">EMANUEL MORENO</li>
                 <hr>
-                <li><a href="home.html">home</a></li>
+                <li><a href="about.html">about</a></li>
                 <li><a href="commissions.html">commissions</a></li>
                 <li><a href="gallery.html">recent acquisitions</a></li>
                 <br>
@@ -32,43 +32,8 @@
         <main class="content">
             <section id="commissions">
                 <h2>Commissions</h2>
-                <p class="ind">Contact me first to book a session. Be sure to include the date, time, and location.</p>
-                <p class="ind">After contacting me for a session, please pay via Venmo with your session.</p>
-                <p class="ind">Enter either the price or time, and click "Calculate" to get the other value.</p>
-
-                <label class="ind" for="price">Price ($):</label>
-                <input type="number" id="price" step="1" min="0" placeholder="Enter price">
-                <br>
-                <label class="ind" for="time">Time (minutes):</label>
-                <input type="number" id="time" step="1" min="0" placeholder="Enter time">
-                <br>
-                <br>
-                <button class="ind" onclick="calculate()">Calculate</button>
-                <p class="ind" id="result"></p>
-                <br>
-                <br>
-                <script>
-                    function calculate() {
-                        let price = parseFloat(document.getElementById('price').value);
-                        let time = parseFloat(document.getElementById('time').value);
-                        const result = document.getElementById('result');
-                
-                        if (!isNaN(price) && isNaN(time)) {
-                            // Inverse of f(t) = (3/4)t + 5
-                            time = (price - 5) * (4 / 3);
-                            result.innerText = `For $${price}, you get approximately ${time.toFixed(2)} minutes.`;
-                        } else if (isNaN(price) && !isNaN(time)) {
-                            // f(t) = (3/4)t + 5
-                            price = (3 / 4) * time + 5;
-                            result.innerText = `For ${time} minutes, the price is approximately $${price.toFixed(2)}.`;
-                        } else {
-                            result.innerText = "Please enter either the price or time, not both.";
-                        }
-                    }
-                </script>
-
+                <p class="ind" style="font-family: Arial, sans-serif;"><b>I AM AVAILABLE IN COLUMBIA, SC AS OF SPRING 2025. </b>Contact me first to book a session if interested. Be sure to include the date, time, and location. After contacting me for a session, please pay via Venmo.</p>
                 <br><hr class="hr-style"><br>
-                <br>
                 <section id="commissions">
                     <h2>Works</h2>
                     <div class="gallery">

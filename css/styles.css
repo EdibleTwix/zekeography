@@ -1,7 +1,14 @@
 /* GENERAL */
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/BebasNeue-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
     background-color: #121212 ;
 }
 
@@ -92,7 +99,7 @@ a:hover {
     margin: 20px 0;
 }
 
-/* INDEX */
+/* HOME */
 h4 {
     color: #F5F5F5 ;
     margin-top: 10px;
